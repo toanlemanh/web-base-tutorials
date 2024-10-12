@@ -1,0 +1,16 @@
+#start-btn {
+    background-color: #28a745;
+}
+
+#start-btn:hover {
+    background-color: #008000; 
+}
+
+@media only screen and (max-width: 600px) {
+    .content-over-ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 300px;
+    }
+}
