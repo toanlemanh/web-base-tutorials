@@ -1,0 +1,27 @@
+
+#playground {
+    position: relative;
+    overflow: hidden;
+}
+.square {
+    width: 190px;
+    height: 190px;
+}
+#car {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 0;
+    left : 0        
+}
+.bomb {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+}
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+ 
