@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./assets/bootstrap-5.0.2/css/bootstrap.min.css" />
+	<script src="assets/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="assets/fontawesome-6.6.0/css/all.min.css">
+</head>
+
+<body>
+	<div id="wrapper" class="container">
+		<div class="row">
+			<!-- Ở màn md, các card này hiện hơi nhỏ, nên chuyển thử sang màn lg trở đi thì n mới chia -->
+			 <!-- Em da set lai tu man xs -> md : 2 col -->
+			<nav class="navbar sticky-top col-lg-3 d-none d-lg-flex flex-column bg-info">
+				<p class="nav-item">Danh muc lien quan</p>
+				<p class="nav-item">webcam</p>
+				<p class="nav-item">webcam</p>
+				<p class="nav-item">webcam</p>
+			</nav>
+			<div class="col-12 col-lg-9 p-0 pb-5">
+				<header class="container sticky-top bg-white">
+					<div class="row border-bottom pb-2 mx-0">
+						<div class="col-12 col-md-5 col-xl-6">
+							<h3 class=" fs-5 pt-3"> Webcam, Camera</h3>
+							<span class="text-secondary">17220 ket qua cho san pham</span>
+						</div>
+						<div class="col-12 col-md-7 col-xl-6 mx-0">
+							<div class="d-flex align-items-end justify-content-between h-100">
+								<div class="d-flex flex-row justify-content-between w-100 align-items-center">
+									<span>Sap xep theo</span>
+									<div class="dropdown">
+										<button class="btn border border-dark dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+										  Phu hop voi
+										</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+										  <li><button class="dropdown-item" type="button">Action</button></li>
+										  <li><button class="dropdown-item" type="button">Another action</button></li>
+										  <li><button class="dropdown-item" type="button">Something else here</button></li>
+										</ul>
+									  </div>
+									<div class="d-flex justify-content-between align-items-center">
+										<span>Xem:</span>
+										<span title="category" class="btn"><i class="fa-solid fa-table-cells-large"></i></span>
+										<span class="btn px-0"><i class="fa-solid fa-list"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Đoạn này nên chia theo cột, responsive -->
+					
+				</header>
+				<main class="container-fluid py-3">
+					<div class="row row-cols-2 row-cols-lg-3 g-4 pb-3">
+						<div class="col">
+							<div class="card h-100">
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">Last updated 3 mins ago</small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">Last updated 3 mins ago</small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">Last updated 3 mins ago</small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This card has supporting text below as a natural lead-in to
+										additional content.</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">Last updated 3 mins ago</small>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card h-100">
+								<img src="..." class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural
+										lead-in to additional content. This card has even longer content than the first
+										to show that equal height action.</p>
+								</div>
+								<div class="card-footer">
+									<small class="text-muted">Last updated 3 mins ago</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Độ cao của các thành phần trng này không đồng nhất nên sẽ bị thò thụt, tham khảo đoạn code phía trên -->
+					<!-- Lưu ý, tất cả các card này nên có đầy đủ các thành phần, dù chưa chắc n đã xuất hiện (hình dung khi e gen code từ 1 mảng ra thì n ntn chứ k phải là code theo hệt giao diện là xong) -->
+					<!-- Nếu thêm php vào đây, dữ liệu toàn bộ trên này gồm: link ảnh, title, giá, discount, votes, location thì sẽ hiển thị như thế nào? -->
+
+					
+				</main>
+			</div>
+			<!-- Chưa thấy có code pagination -->
+		</div>
+		<footer class="fixed-bottom container px-md-4 px-lg-0">
+			<div class="bg-light py-2 px-2 py-lg-3 d-flex justify-content-between">
+				<span>Copy <a class="btn-link" href="#">@Fit-Hanu</a></span>
+				<span>Phone: <a class="btn-link" href="#">09-09289-7587</a></span>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
