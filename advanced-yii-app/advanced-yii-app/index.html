@@ -11,6 +11,7 @@
     <script src="assets/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="assets/fontawesome-6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="assets/js/script.js"></script>
   </head>
 
   <body>
@@ -18,33 +19,216 @@
       <div class="row">
         <!-- Ở màn md, các card này hiện hơi nhỏ, nên chuyển thử sang màn lg trở đi thì n mới chia -->
         <!-- Em da set lai tu man xs -> md : 2 col -->
-        <nav
-          class="navbar sticky-top col-lg-3 d-none d-lg-flex flex-column bg-info"
-        >
-          <p class="nav-item">Danh muc lien quan</p>
-          <p class="nav-item">webcam</p>
-          <p class="nav-item">webcam</p>
-          <p class="nav-item">webcam</p>
-        </nav>
+        <div class="col-lg-3 d-none d-lg-flex flex-column">
+          <nav aria-label="filter" class="sticky-top navbar-nav-scroll nav-lg flex-column-lg navbar-md flex-row-md pt-3">
+            <div class="nav-item border-bottom">
+              <h2 class="fs-6 text-secondary">Danh mục liên quan</h2>
+              <p class="text-warning fw-bold text-capitalize fs-6">webcam</p>
+            </div>
+            <div class="nav-item border-bottom py-3">
+              <h2 class="fs-6 text-secondary text-capitalize mb-3">Dịch vụ</h2>
+              <div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>Giao hàng miễn phí</small>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>lazMall</small>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>lazQuốcTế</small>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>Thanh toán khi nhận hàng</small>
+                  </label>
+                </div>
+              </div>
+            </div>
+             <div class="nav-item border-bottom py-3">
+              <h2 class="fs-6 text-secondary text-capitalize mb-3">Địa điểm</h2>
+              <div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>nội địa</small>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>nước ngoài</small>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="nav-item border-bottom py-3">
+              <h2 class="fs-6 text-secondary text-capitalize mb-3">Giá</h2>
+              <div class="row flex-row justify-content-between mx-0">
+               <input class="form-control w-35 text-small" type="text" aria-label="low-price" placeholder="Tối thiểu" />
+               <input class="form-control w-35 text-small" type="text" aria-label="high-price" placeholder="Tối đa" />
+               <button title="price" type="button" class="w-25 btn btn-warning"><i class="fa-solid fa-caret-right text-white"></i></button>
+              </div>
+            </div>
+            <div class="nav-item border-bottom py-3">
+              <h2 class="fs-6 text-secondary text-capitalize mb-3">đánh giá</h2>
+              <div>
+                <small class="text-muted pe-3">
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                </small>
+                <small>Trở lên</small>
+              </div>  
+              <div>
+                <small class="text-muted pe-3">
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-secondary fa-solid fa-star"></i>
+                </small>
+                <small>Trở lên</small>
+              </div>  
+              <div>
+                <small class="text-muted pe-3">
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-secondary fa-solid fa-star"></i>
+                  <i class="text-secondary fa-solid fa-star"></i>
+                </small>
+                <small>Trở lên</small>
+              </div>  
+              <div>
+                <small class="text-muted pe-3">
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-secondary fa-solid fa-star"></i>
+                  <i class="text-secondary fa-solid fa-star"></i>
+                </small>
+                <small>Trở lên</small>
+              </div>  
+              <div>
+                <small class="text-muted pe-3">
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-warning fa-solid fa-star"></i>
+                  <i class="text-secondary fa-solid fa-star"></i>
+                  <i class="text-secondary fa-solid fa-star"></i>
+                  <i class="text-secondary fa-solid fa-star"></i>
+                </small>
+                <small>Trở lên</small>
+              </div>  
+              
+            </div> 
+            <div class="nav-item border-bottom py-3">
+              <h2 class="fs-6 text-secondary text-capitalize mb-3">microphone tích hợp</h2>
+              <div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>không</small>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>có</small>
+                  </label>
+                </div>
+              </div>
+            </div> 
+            <div class="nav-item border-bottom py-3">
+              <h2 class="fs-6 text-secondary text-capitalize mb-3">thiết bị tương thích</h2>
+              <div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>ASUS</small>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>apple</small>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>samsung</small>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                    <small>sony</small>
+                  </label>
+                </div>
+                <!-- expanded -->
+                <a class="btn-link text-decoration-none" onclick="hideViewMoreButton()" id="view-device" data-bs-toggle="collapse" href="#view-more-device" role="button" aria-expanded="false" aria-controls="view-more-device">
+                    Xem thêm...
+                </a>
+                <div class="collapse" id="view-more-device">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                      <small>htc</small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                      <small>nokia</small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                      <small>blackberry</small>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label text-capitalize fs-6" for="defaultCheck1">
+                      <small>oppo</small>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </nav>
+        </div>
         <div class="col-12 col-lg-9 p-0 pb-5">
           <header class="container sticky-top bg-white">
             <div class="row border-bottom pb-3 mx-0">
-              <div class="col-12 col-md-5 col-xl-6">
-                <h3 class="fs-5 pt-3">Webcam, Camera</h3>
-                <span class="text-secondary">17220 kết quả cho sản phẩm</span>
+              <div class="col-12 col-md-5 col-xl-7">
+                <h1 class="fs-5 pt-3 text-capitalize fs-6">
+                  webcam, camera máy tính hd, kèm mic từ logitech, hoco, razer
+                </h1>
+                <small class="text-secondary">17220 sản phẩm tìm thấy trong Webcam</small>
               </div>
-              <div class="col-12 col-md-7 col-xl-6 mx-0">
-                <div
-                  class="d-flex align-items-end justify-content-between h-100"
-                >
-                  <div
-                    class="d-flex flex-row w-100 align-items-center justify-content-between"
-                  >
+              <div class="d-none d-md-flex col-md-7 col-xl-5 mx-0">
+                <div class="d-flex align-items-end justify-content-between h-100">
+                  <div class="d-flex flex-row w-100 align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
                       <span class="pe-2">Sắp xếp theo:</span>
-                      <div class="dropdown">
+                      <div class="dropdown pe-2">
                         <button
-                          class="btn border border-dark text-start pe-md-2 pe-md-4 pe-xxl-5 dropdown-toggle"
+                          id="sort-button"
+                          class="btn border border-dark text-start pe-5 dropdown-toggle"
                           type="button"
                           id="dropdownMenu2"
                           data-bs-toggle="dropdown"
@@ -58,17 +242,17 @@
                         >
                           <li>
                             <button class="dropdown-item" type="button">
-                              Action
+                              Giá cao
                             </button>
                           </li>
                           <li>
                             <button class="dropdown-item" type="button">
-                              Another action
+                              Giá thấp
                             </button>
                           </li>
                           <li>
                             <button class="dropdown-item" type="button">
-                              Something else here
+                              Gần nhất
                             </button>
                           </li>
                         </ul>
@@ -98,7 +282,7 @@
                 <div class="card h-100 border-0">
                   <div class="p-3 text-center">
                     <img
-                      src="./assets/media/img/webcam.jpg"
+                      src="./assets/media/img/webcam-1080.jpg"
                       class="card-img-top"
                       alt="..."
                     />
@@ -118,15 +302,65 @@
                       2.334.000 đ
                     </div>
                     <div class="d-flex justify-content-between">
-                      <small class="d-flex justify-content-between align-items-center text-muted">
-                        <i class="text-warning fa-regular fa-star"></i>
-                        <i class="text-warning fa-regular fa-star"></i>
-                        <i class="text-warning fa-regular fa-star"></i>
-                        <i class="text-warning fa-regular fa-star"></i>
-                        <i class="text-warning fa-regular fa-star"></i>
-						(19)
+                      <small
+                        class="d-flex justify-content-between align-items-center text-muted"
+                      >
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        (19)
                       </small>
-                      <small class="text-muted text-truncate ms-3">Hà Nội</small>
+                      <small class="text-muted text-truncate ms-3"
+                        >Hà Nội</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="p-3 text-center">
+                    <img
+                      src="./assets/media/img/micro-takstar-k320.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="p-0">
+                    <h5 class="fs-6 m-0 d-inline">
+                      <span>
+                        <img
+                          class="mall-label"
+                          src="https://lzd-img-global.slatic.net/us/media/f16386886d49a4db7247f2c5d1e8213f-384-128.png"
+                          alt=""
+                        />
+                      </span>
+                      Takstar Mic livestream cho máy tính
+                    </h5>
+                    <div class="card-text fs-4 text-warning fw-bold">
+                      800.000 đ
+                    </div>
+                    <small
+                      class="text-decoration-line-through text-muted text-truncate"
+                      >1.000.000 đ</small
+                    ><small class="ms-2 text-muted">-20%</small>
+                    <div class="d-flex justify-content-between">
+                      <small
+                        class="d-flex justify-content-between align-items-center text-muted"
+                      >
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        (19)
+                        <!-- <small class="d-inline">(19)</small> -->
+                      </small>
+                      <small class="text-muted text-truncate ms-3"
+                        >Bình Lục - Hà Nam</small
+                      >
                     </div>
                   </div>
                 </div>
@@ -154,19 +388,347 @@
                     <div class="card-text fs-4 text-warning fw-bold">
                       800.000 đ
                     </div>
-                    <small class="text-decoration-line-through text-muted text-truncate">1.000.000 đ</small
+                    <small
+                      class="text-decoration-line-through text-muted text-truncate"
+                      >1.000.000 đ</small
                     ><small class="ms-2 text-muted">-20%</small>
                     <div class="d-flex justify-content-between">
-                      <small class="d-flex justify-content-between align-items-center text-muted">
-                        <i class="text-warning fa-regular fa-star"></i>
-                        <i class="text-warning fa-regular fa-star"></i>
-                        <i class="text-warning fa-regular fa-star"></i>
-                        <i class="text-warning fa-regular fa-star"></i>
-                        <i class="text-warning fa-regular fa-star"></i>
-						(19)
+                      <small
+                        class="d-flex justify-content-between align-items-center text-muted"
+                      >
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        (19)
                         <!-- <small class="d-inline">(19)</small> -->
                       </small>
-                      <small class="text-muted text-truncate ms-3">Bình Lục - Hà Nam</small>
+                      <small class="text-muted text-truncate ms-3"
+                        >Bình Lục - Hà Nam</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="p-3 text-center">
+                    <img
+                      src="./assets/media/img/webcam.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="p-0">
+                    <h5 class="fs-6 m-0 d-inline">
+                      <span>
+                        <img
+                          class="mall-label"
+                          src="https://lzd-img-global.slatic.net/us/media/f16386886d49a4db7247f2c5d1e8213f-384-128.png"
+                          alt=""
+                        />
+                      </span>
+                      Webcam có mic livestream ở trên máy tính
+                    </h5>
+                    <div class="card-text fs-4 text-warning fw-bold">
+                      800.000 đ
+                    </div>
+                    <small
+                      class="text-decoration-line-through text-muted text-truncate"
+                      >1.000.000 đ</small
+                    ><small class="ms-2 text-muted">-20%</small>
+                    <div class="d-flex justify-content-between">
+                      <small
+                        class="d-flex justify-content-between align-items-center text-muted"
+                      >
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        (19)
+                        <!-- <small class="d-inline">(19)</small> -->
+                      </small>
+                      <small class="text-muted text-truncate ms-3"
+                        >Bình Lục - Hà Nam</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="p-3 text-center">
+                    <img
+                      src="./assets/media/img/webcam.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="p-0">
+                    <h5 class="fs-6 m-0 d-inline">
+                      <span>
+                        <img
+                          class="mall-label"
+                          src="https://lzd-img-global.slatic.net/us/media/f16386886d49a4db7247f2c5d1e8213f-384-128.png"
+                          alt=""
+                        />
+                      </span>
+                      Webcam có mic livestream ở trên máy tính
+                    </h5>
+                    <div class="card-text fs-4 text-warning fw-bold">
+                      800.000 đ
+                    </div>
+                    <small
+                      class="text-decoration-line-through text-muted text-truncate"
+                      >1.000.000 đ</small
+                    ><small class="ms-2 text-muted">-20%</small>
+                    <div class="d-flex justify-content-between">
+                      <small
+                        class="d-flex justify-content-between align-items-center text-muted"
+                      >
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        (19)
+                        <!-- <small class="d-inline">(19)</small> -->
+                      </small>
+                      <small class="text-muted text-truncate ms-3"
+                        >Bình Lục - Hà Nam</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="p-3 text-center">
+                    <img
+                      src="./assets/media/img/webcam-1080.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="p-0">
+                    <h5 class="fs-6 m-0 d-inline">
+                      <span>
+                        <img
+                          class="mall-label"
+                          src="https://lzd-img-global.slatic.net/us/media/f16386886d49a4db7247f2c5d1e8213f-384-128.png"
+                          alt=""
+                        />
+                      </span>
+                      Webcam có mic livestream ở trên máy tính
+                    </h5>
+                    <div class="card-text fs-4 text-warning fw-bold">
+                      800.000 đ
+                    </div>
+                    <small
+                      class="text-decoration-line-through text-muted text-truncate"
+                      >1.000.000 đ</small
+                    ><small class="ms-2 text-muted">-20%</small>
+                    <div class="d-flex justify-content-between">
+                      <small
+                        class="d-flex justify-content-between align-items-center text-muted"
+                      >
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        (19)
+                        <!-- <small class="d-inline">(19)</small> -->
+                      </small>
+                      <small class="text-muted text-truncate ms-3"
+                        >Bình Lục - Hà Nam</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="p-3 text-center">
+                    <img
+                      src="./assets/media/img/micro-takstar-k320.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="p-0">
+                    <h5 class="fs-6 m-0 d-inline">
+                      <span>
+                        <img
+                          class="mall-label"
+                          src="https://lzd-img-global.slatic.net/us/media/f16386886d49a4db7247f2c5d1e8213f-384-128.png"
+                          alt=""
+                        />
+                      </span>
+                      Takstar Mic livestream cho máy tính
+                    </h5>
+                    <div class="card-text fs-4 text-warning fw-bold">
+                      800.000 đ
+                    </div>
+                    <small
+                      class="text-decoration-line-through text-muted text-truncate"
+                      >1.000.000 đ</small
+                    ><small class="ms-2 text-muted">-20%</small>
+                    <div class="d-flex justify-content-between">
+                      <small
+                        class="d-flex justify-content-between align-items-center text-muted"
+                      >
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        (19)
+                        <!-- <small class="d-inline">(19)</small> -->
+                      </small>
+                      <small class="text-muted text-truncate ms-3"
+                        >Bình Lục - Hà Nam</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="p-3 text-center">
+                    <img
+                      src="./assets/media/img/webcam.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="p-0">
+                    <h5 class="fs-6 m-0 d-inline">
+                      <span>
+                        <img
+                          class="mall-label"
+                          src="https://lzd-img-global.slatic.net/us/media/f16386886d49a4db7247f2c5d1e8213f-384-128.png"
+                          alt=""
+                        />
+                      </span>
+                      Webcam có mic livestream ở trên máy tính
+                    </h5>
+                    <div class="card-text fs-4 text-warning fw-bold">
+                      800.000 đ
+                    </div>
+                    <small
+                      class="text-decoration-line-through text-muted text-truncate"
+                      >1.000.000 đ</small
+                    ><small class="ms-2 text-muted">-20%</small>
+                    <div class="d-flex justify-content-between">
+                      <small
+                        class="d-flex justify-content-between align-items-center text-muted"
+                      >
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        (19)
+                        <!-- <small class="d-inline">(19)</small> -->
+                      </small>
+                      <small class="text-muted text-truncate ms-3"
+                        >Bình Lục - Hà Nam</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="p-3 text-center">
+                    <img
+                      src="./assets/media/img/webcam-1080.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="p-0">
+                    <h5 class="fs-6 m-0 d-inline">
+                      <span>
+                        <img
+                          class="mall-label"
+                          src="https://lzd-img-global.slatic.net/us/media/f16386886d49a4db7247f2c5d1e8213f-384-128.png"
+                          alt=""
+                        />
+                      </span>
+                      Webcam có mic livestream ở trên máy tính
+                    </h5>
+                    <div class="card-text fs-4 text-warning fw-bold">
+                      800.000 đ
+                    </div>
+                    <small
+                      class="text-decoration-line-through text-muted text-truncate"
+                      >1.000.000 đ</small
+                    ><small class="ms-2 text-muted">-20%</small>
+                    <div class="d-flex justify-content-between">
+                      <small
+                        class="d-flex justify-content-between align-items-center text-muted"
+                      >
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        (19)
+                        <!-- <small class="d-inline">(19)</small> -->
+                      </small>
+                      <small class="text-muted text-truncate ms-3"
+                        >Bình Lục - Hà Nam</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 border-0">
+                  <div class="p-3 text-center">
+                    <img
+                      src="./assets/media/img/micro-takstar-k320.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="p-0">
+                    <h5 class="fs-6 m-0 d-inline">
+                      <span>
+                        <img
+                          class="mall-label"
+                          src="https://lzd-img-global.slatic.net/us/media/f16386886d49a4db7247f2c5d1e8213f-384-128.png"
+                          alt=""
+                        />
+                      </span>
+                      Takstar Mic livestream cho máy tính
+                    </h5>
+                    <div class="card-text fs-4 text-warning fw-bold">
+                      800.000 đ
+                    </div>
+                    <small
+                      class="text-decoration-line-through text-muted text-truncate"
+                      >1.000.000 đ</small
+                    ><small class="ms-2 text-muted">-20%</small>
+                    <div class="d-flex justify-content-between">
+                      <small
+                        class="d-flex justify-content-between align-items-center text-muted"
+                      >
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        <i class="text-warning fa-regular fa-star"></i>
+                        (19)
+                        <!-- <small class="d-inline">(19)</small> -->
+                      </small>
+                      <small class="text-muted text-truncate ms-3"
+                        >Bình Lục - Hà Nam</small
+                      >
                     </div>
                   </div>
                 </div>
@@ -176,10 +738,33 @@
             <!-- Lưu ý, tất cả các card này nên có đầy đủ các thành phần, dù chưa chắc n đã xuất hiện (hình dung khi e gen code từ 1 mảng ra thì n ntn chứ k phải là code theo hệt giao diện là xong) -->
             <!-- Nếu thêm php vào đây, dữ liệu toàn bộ trên này gồm: link ảnh, title, giá, discount, votes, location thì sẽ hiển thị như thế nào? -->
           </main>
+          <!-- Pagination -->
+          <nav aria-label="pagination">
+            <ul class="pagination justify-content-end gap-2">
+              <li class="page-item">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                  <i class="fa fa-solid fa-caret-left text-secondary"></i>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link text-secondary" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item d-flex align-items-center" aria-current="page">
+                <i class="fa-solid fa-ellipsis"></i>
+              </li>
+              <li class="page-item"><a class="page-link text-secondary" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <i class="fa fa-solid fa-caret-right text-secondary"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <!-- Chưa thấy có code pagination -->
       </div>
-      <footer class="fixed-bottom container px-md-4 px-lg-0">
+       <footer class="fixed-bottom container px-md-4 px-lg-0">
         <div class="bg-light py-2 px-2 py-lg-3 d-flex justify-content-between">
           <span
             >Copy
@@ -194,7 +779,7 @@
             ></span
           >
         </div>
-      </footer>
+      </footer> 
     </div>
   </body>
 </html>
