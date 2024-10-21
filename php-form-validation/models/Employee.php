@@ -20,6 +20,24 @@ class Employee extends Model{
         
     }
     // function first => get element by id
+    public function first($id){
+        // connect database
+       $query = "SELECT * FROM EMPLOYEE WHERE ID = ?";
+        // select all
+        try {
+            $employee = new Employee();
+            $stm = $employee->dbConnection->prepare($query);
+            $result = $stm->execute([$id]);
+            return $result;
+        } catch (Exception) {
+           die("Cannot query first");
+        }
+        finally {
+            $this->dbConnection->close();
+        }
+       
+        
+    }
 
     // function create => post element
     public function create($data) {

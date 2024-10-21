@@ -1,17 +1,22 @@
 <?php 
    require("./models/Employee.php");
 class EmployeeController {
-    protected $employee;
+    protected $employeeModel;
     public function __construct () {
-        $this->employee = new Employee();
+        $this->employeeModel = new Employee();
     }
     public function index () {
-        $employee = new Employee();
-        $employees = $employee->all();
+        $employeeModel = new Employee();
+        $employees = $employeeModel->all();
         require("./views/index.php");
     }
     public function view () {
-
+        $employeeModel = new Employee();
+        if ($_GET['id']) {
+            $employee = $employeeModel->first($_GET['id']);
+            require("./views/viewEmployee.php");
+        }
+        echo "Sth wrong";
     }
     /**
      * GET to createEmployee view
@@ -36,7 +41,7 @@ class EmployeeController {
         }
 
         if (count($errors) === 0) {
-            $isCreated = $this->employee->create($_POST);
+            $isCreated = $this->employeeModel->create($_POST);
             if ($isCreated) {
                 header('location: index.php?controller=employee&action=index');
             }
